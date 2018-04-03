@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Apr 02 22:50:22 2018
+# Process ID: 11528
+# Current directory: C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.runs/impl_1
+# Command line: vivado.exe -log AUDIO_FX_TOP.vdi -applog -messageDb vivado.pb -mode batch -source AUDIO_FX_TOP.tcl -notrace
+# Log file: C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.vdi
+# Journal file: C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AUDIO_FX_TOP.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnreset'. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnreset'. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnup'. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnup'. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btndown'. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btndown'. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 438.090 ; gain = 231.516
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[0] has multiple drivers: count_reg[0]__1/Q, count_reg[0]__0/Q, count_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[10] has multiple drivers: count_reg[10]__1/Q, count_reg[10]__0/Q, count_reg[10]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[11] has multiple drivers: count_reg[11]__1/Q, count_reg[11]__0/Q, count_reg[11]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[1] has multiple drivers: count_reg[1]__1/Q, count_reg[1]__0/Q, count_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[2] has multiple drivers: count_reg[2]__1/Q, count_reg[2]__0/Q, count_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[3] has multiple drivers: count_reg[3]__1/Q, count_reg[3]__0/Q, count_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[4] has multiple drivers: count_reg[4]__1/Q, count_reg[4]__0/Q, count_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[5] has multiple drivers: count_reg[5]__1/Q, count_reg[5]__0/Q, count_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[6] has multiple drivers: count_reg[6]__1/Q, count_reg[6]__0/Q, count_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[7] has multiple drivers: count_reg[7]__1/Q, count_reg[7]__0/Q, count_reg[7]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[8] has multiple drivers: count_reg[8]/Q, count_reg[8]__0/Q, count_reg[8]__1/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net led_OBUF[9] has multiple drivers: count_reg[9]__1/Q, count_reg[9]/Q, count_reg[9]__0/Q.
+INFO: [Project 1-461] DRC finished with 12 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 442.949 ; gain = 4.859
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 6 Warnings, 6 Critical Warnings and 13 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 02 22:50:57 2018...
