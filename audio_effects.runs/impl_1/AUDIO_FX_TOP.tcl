@@ -50,12 +50,12 @@ set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.cache/wt [current_project]
-  set_property parent.project_path C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.xpr [current_project]
-  set_property ip_repo_paths c:/Users/User/Desktop/EE2026/audio_effects/audio_effects.cache/ip [current_project]
-  set_property ip_output_repo c:/Users/User/Desktop/EE2026/audio_effects/audio_effects.cache/ip [current_project]
-  add_files -quiet C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp
-  read_xdc C:/Users/User/Desktop/EE2026/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
+  set_property webtalk.parent_dir C:/Users/xw/Desktop/EE2026_Project/audio_effects.cache/wt [current_project]
+  set_property parent.project_path C:/Users/xw/Desktop/EE2026_Project/audio_effects.xpr [current_project]
+  set_property ip_repo_paths c:/Users/xw/Desktop/EE2026_Project/audio_effects.cache/ip [current_project]
+  set_property ip_output_repo c:/Users/xw/Desktop/EE2026_Project/audio_effects.cache/ip [current_project]
+  add_files -quiet C:/Users/xw/Desktop/EE2026_Project/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp
+  read_xdc C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
   link_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
   write_hwdef -file AUDIO_FX_TOP.hwdef
   close_msg_db -file init_design.pb

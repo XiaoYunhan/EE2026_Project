@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/02/2018 08:12:35 PM
+// Create Date: 2018/04/03 20:28:06
 // Design Name: 
-// Module Name: button_signal
+// Module Name: CLOCK_four
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module button_signal(
-    input slow_CLK,
-    input butIn,
-    output SignalOut
+module CLOCK_four(
+    input CLOCK,
+    output reg clock_out
     );
-    wire QD,Q2;
-    
-    my_dff unit1 (slow_CLK,butIn,QD );
-    my_dff unit2 (slow_CLK,QD,Q2 );
-    assign SignalOut=QD&~Q2;
+    reg [24:0] count=0;
+    initial begin
+    clock_out<=0;
+    end
+    always @ (posedge CLOCK) begin
+    count<=(count==25'b1011111010111100001000000)?0:count+1;
+    clock_out<=(count==0)?~clock_out:clock_out;
+    end
 endmodule
