@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18428 
+INFO: Helper process launched with PID 2152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 273.945 ; gain = 66.492
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 273.586 ; gain = 66.875
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 INFO: [Synth 8-638] synthesizing module 'Clock_G' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Clock_G.v:23]
@@ -36,13 +36,13 @@ INFO: [Synth 8-638] synthesizing module 'clock_slow' [C:/Users/xw/Desktop/EE2026
 INFO: [Synth 8-256] done synthesizing module 'clock_slow' (7#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/clock_slow.v:23]
 INFO: [Synth 8-638] synthesizing module 'delay' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v:23]
 INFO: [Synth 8-256] done synthesizing module 'delay' (8#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:82]
 INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (9#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-WARNING: [Synth 8-5788] Register count_reg in module AUDIO_FX_TOP is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:66]
+WARNING: [Synth 8-5788] Register count_reg in module AUDIO_FX_TOP is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
 INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (10#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 311.992 ; gain = 104.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 311.664 ; gain = 104.953
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,20 +51,20 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:91]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:103]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 311.992 ; gain = 104.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 311.664 ; gain = 104.953
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -72,24 +72,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'btnreset'. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:111]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:111]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnreset'. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:112]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:112]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnup'. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:113]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:113]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnup'. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:114]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btndown'. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:119]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:119]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btndown'. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:120]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -98,22 +80,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 599.039 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 598.660 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "clk_20k0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "clock_out0" won't be mapped to RAM because it is too sparse
@@ -129,7 +111,6 @@ INFO: [Synth 8-5546] ROM "clock0" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
 INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "speaker_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "speaker_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -141,7 +122,7 @@ INFO: [Synth 8-5544] ROM "speaker_out" won't be mapped to Block RAM because addr
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -166,7 +147,7 @@ Detailed RTL Component Info :
 	               25 Bit    Registers := 1     
 	               18 Bit    Registers := 7     
 	               16 Bit    Registers := 2     
-	               12 Bit    Registers := 13    
+	               12 Bit    Registers := 14    
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 18    
@@ -177,8 +158,9 @@ Detailed RTL Component Info :
 	   2 Input     18 Bit        Muxes := 7     
 	   2 Input     16 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 42    
+	   8 Input     12 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
-	  12 Input     11 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 12    
@@ -197,11 +179,12 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      3 Bit       Adders := 2     
 +---Registers : 
-	               12 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 +---Muxes : 
+	   8 Input     12 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
-	  12 Input     11 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 1     
 Module Clock_G 
@@ -291,7 +274,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 599.039 ; gain = 391.586
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -303,14 +286,14 @@ INFO: [Synth 8-5546] ROM "slowF0" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-5546] ROM "slowG0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slowA0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slowB0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "unitc/clk_20k0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "unit4/clock_out0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "unit2/clock0" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[11] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 598.660 ; gain = 391.949
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -342,41 +325,41 @@ INFO: [Synth 8-3886] merging instance 'unit1/E_reg[0]' (FDS) to 'unit1/E_reg[11]
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[0]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[0]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[0]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[4]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[4]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[4]' (FDS) to 'unit1/C_reg[1]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[4]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[4]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[4]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[4]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[1]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[1]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[1]' (FDS) to 'unit1/C_reg[2]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[1]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[1]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[1]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[1]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[2]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[2]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[2]' (FDS) to 'unit1/C_reg[1]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[2]' (FDS) to 'unit1/C_reg[3]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[2]' (FDS) to 'unit1/E_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[2]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[2]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[2]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[3]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[3]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[3]' (FDS) to 'unit1/C_reg[1]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[3]' (FDS) to 'unit1/C_reg[4]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[3]' (FDS) to 'unit1/E_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[3]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[3]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[3]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[4]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[4]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[4]' (FDS) to 'unit1/C_reg[5]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[4]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[4]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[4]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[4]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[5]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[5]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[5]' (FDS) to 'unit1/C_reg[1]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[5]' (FDS) to 'unit1/C_reg[6]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[5]' (FDS) to 'unit1/E_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[5]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[5]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[5]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[1]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[1]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[1]' (FDS) to 'unit1/C_reg[6]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[1]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[1]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[1]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[1]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[6]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[6]' (FDS) to 'unit1/B_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/C_reg[6]' (FDS) to 'unit1/C_reg[7]'
@@ -384,50 +367,54 @@ INFO: [Synth 8-3886] merging instance 'unit1/E_reg[6]' (FDS) to 'unit1/E_reg[11]
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[6]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[6]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[6]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[7]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[7]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[7]' (FDS) to 'unit1/C_reg[8]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[7]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[7]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[7]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[7]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[8]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[8]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[8]' (FDS) to 'unit1/C_reg[7]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[8]' (FDS) to 'unit1/C_reg[9]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[8]' (FDS) to 'unit1/E_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[8]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[8]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[8]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[9]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[9]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[9]' (FDS) to 'unit1/C_reg[7]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[9]' (FDS) to 'unit1/C_reg[10]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[9]' (FDS) to 'unit1/E_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/G_reg[9]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[9]' (FDS) to 'unit1/D_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[9]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[7]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[7]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[7]' (FDS) to 'unit1/C_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[7]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[7]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[7]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[7]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[11]' (FDS) to 'unit1/A_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[11]' (FDS) to 'unit1/B_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[11]' (FDS) to 'unit1/C_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[11]' (FDS) to 'unit1/E_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[11]' (FDS) to 'unit1/G_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[11]' (FDS) to 'unit1/D_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[11]' (FDS) to 'unit1/F_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[10]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[10]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[10]' (FDS) to 'unit1/C_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[10]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[10]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[10]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[10]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'led_reg[0]' (FDSE) to 'led_reg[1]'
+INFO: [Synth 8-3886] merging instance 'led_reg[1]' (FDSE) to 'led_reg[2]'
+INFO: [Synth 8-3886] merging instance 'led_reg[2]' (FDSE) to 'led_reg[3]'
+INFO: [Synth 8-3886] merging instance 'led_reg[3]' (FDSE) to 'led_reg[4]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[0]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[4]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[1]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[2]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[3]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[4]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[5]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[1]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[6]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[7]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[8]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[9]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[7]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[11]' (FDE) to 'unit1/music_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[10]' (FDE) to 'unit1/music_out_reg[11]'
 WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[14]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[13]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[12]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -438,7 +425,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/C_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -449,7 +436,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/D_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -460,7 +447,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/E_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -471,7 +458,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/F_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -482,7 +469,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/G_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -493,7 +480,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/A_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -504,7 +491,7 @@ WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[3]) is unused and will b
 WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/B_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
-WARNING: [Synth 8-3332] Sequential element (unit1/music_out_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (unit1/music_out_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/music_out_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/music_out_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (unit1/music_out_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -524,13 +511,13 @@ WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[6]) is unused and
 WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
 WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[0]_P )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[2]_P )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[1]_P )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[0]_P )
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 598.660 ; gain = 391.949
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -544,10 +531,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 599.039 ; gain = 391.586
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 598.660 ; gain = 391.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -571,16 +558,16 @@ INFO: [Synth 8-4480] The timing for the instance unit3/memory_reg_0_9 (implement
 INFO: [Synth 8-4480] The timing for the instance unit3/memory_reg_0_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance unit3/memory_reg_0_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.359 ; gain = 395.648
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -597,7 +584,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -610,7 +597,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -622,25 +609,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -659,47 +646,48 @@ Report Cell Usage:
 |1     |BUFG     |     2|
 |2     |CARRY4   |    72|
 |3     |LUT1     |   276|
-|4     |LUT2     |   103|
-|5     |LUT3     |    25|
-|6     |LUT4     |    61|
-|7     |LUT5     |    34|
-|8     |LUT6     |   250|
+|4     |LUT2     |   105|
+|5     |LUT3     |    24|
+|6     |LUT4     |    72|
+|7     |LUT5     |    30|
+|8     |LUT6     |   244|
 |9     |RAMB36E1 |    12|
 |10    |FDCE     |     3|
 |11    |FDRE     |   358|
-|12    |LDC      |     3|
-|13    |IBUF     |    18|
-|14    |OBUF     |    18|
+|12    |FDSE     |     7|
+|13    |LDC      |     3|
+|14    |IBUF     |    18|
+|15    |OBUF     |    18|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+----------+-----------------+------+
 |      |Instance  |Module           |Cells |
 +------+----------+-----------------+------+
-|1     |top       |                 |  1235|
-|2     |  bu1     |button_signal    |     6|
-|3     |    unit1 |my_dff_5         |     5|
-|4     |    unit2 |my_dff_6         |     1|
-|5     |  bu2     |button_signal_0  |     5|
-|6     |    unit1 |my_dff_3         |     3|
-|7     |    unit2 |my_dff_4         |     2|
+|1     |top       |                 |  1244|
+|2     |  bu1     |button_signal    |     5|
+|3     |    unit1 |my_dff_5         |     1|
+|4     |    unit2 |my_dff_6         |     4|
+|5     |  bu2     |button_signal_0  |     6|
+|6     |    unit1 |my_dff_3         |     5|
+|7     |    unit2 |my_dff_4         |     1|
 |8     |  bu3     |button_signal_1  |     3|
 |9     |    unit1 |my_dff           |     2|
 |10    |    unit2 |my_dff_2         |     1|
-|11    |  u1      |SPI              |    99|
-|12    |  u2      |DA2RefComp       |    47|
-|13    |  unit1   |Music_Instrument |   728|
+|11    |  u1      |SPI              |   120|
+|12    |  u2      |DA2RefComp       |    48|
+|13    |  unit1   |Music_Instrument |   727|
 |14    |  unit2   |clock_slow       |    34|
-|15    |  unit3   |delay            |   136|
+|15    |  unit3   |delay            |   115|
 |16    |  unit4   |CLOCK_four       |    67|
 |17    |  unitc   |Clock_G          |    35|
 +------+----------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.840 ; gain = 394.387
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 139 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 601.840 ; gain = 107.340
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 601.840 ; gain = 394.387
+Synthesis finished with 0 errors, 0 critical warnings and 143 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 602.359 ; gain = 108.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 602.359 ; gain = 395.648
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -710,8 +698,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDC => LDCE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-165 Infos, 120 Warnings, 6 Critical Warnings and 0 Errors encountered.
+169 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 601.840 ; gain = 394.387
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 601.840 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 04 16:45:43 2018...
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 602.359 ; gain = 395.648
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 602.359 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 04 22:34:54 2018...
