@@ -13,12 +13,13 @@
 
 module AUDIO_FX_TOP(
     input CLK,            // 100MHz FPGA clock
-//    input butup,
-//    input butdown,
-//    input butreset,
+   input butup,
+    input butdown,
+    input butreset,
     input [2:0] mode,
     input [8:0] sw,
     input rep,
+  //  input mix,
     
  
     
@@ -53,26 +54,22 @@ module AUDIO_FX_TOP(
       reg [11:0] speaker_out;
       wire [11:0] delay_out;
       wire [11:0] music_out;
- //    wire volup,voldown, volreset;
+    wire volup,voldown, volreset;
     
-//    CLOCK_four unit4 (CLK,slow_CLK);
-//    button_signal bu1 (slow_CLK,butup,volup);
-//    button_signal bu2 (slow_CLK,butdown,voldown);
-//    button_signal bu3 (slow_CLK,butreset,volreset);
-//      reg [11:0]count=12'b0;
-//      always @ (posedge volup )
-//            begin
-//             count=count-1;
-//            end   
-//            always @ (posedge volup)
-//                begin
-//                 count=count+1; 
-//                end   
-//            always @ (posedge volreset)
-//                    begin
-//                    count=0;
-//                    end   
-    Music_Instrument unit1 (CLK,rep,sw,volup,voldown,volreset,music_out);
+    CLOCK_four unit4 (CLK,slow_CLK);
+    button_signal bu1 (slow_CLK,butup,volup);
+    button_signal bu2 (slow_CLK,butdown,voldown);
+    button_signal bu3 (slow_CLK,butreset,volreset);
+      reg [2:0]count=3'b111;
+      always @ (posedge volup, posedge voldown, posedge volreset )
+            begin
+             count<=(volup)? count-1 : (voldown)? count+1:(volreset )?3'b111:count;
+    
+            end   
+            
+            
+
+    Music_Instrument unit1 (CLK,rep,sw,music_out);
    
     wire clock_s;
     clock_slow unit2 (CLK,clock_s);
@@ -84,8 +81,10 @@ module AUDIO_FX_TOP(
     3'b001:speaker_out<=MIC_in;
     3'b010:speaker_out<=delay_out;
     3'b100:speaker_out<=music_out;
+    
     endcase
     end
+   
     assign led=(speaker_out>11'b10000000000)?11'b11111111111:(speaker_out>11'b1000000000)?11'b1111111111:(speaker_out>11'b100000000)?11'b111111111:(speaker_out>11'b10000000)?11'b11111111:(speaker_out>11'b1000000)?11'b1111111:(speaker_out>11'b100000)?11'b111111:(speaker_out>11'b10000)?11'b11111:(speaker_out>11'b1000)?11'b1111:(speaker_out>11'b100)?11'b111:(speaker_out>11'b10)?11'b11:(speaker_out>11'b1)?11'b1:0;
  //   assign led=music_out;//for testing.    
       //assign speaker_out = MIC_in;

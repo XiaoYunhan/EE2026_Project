@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Wed Apr 04 14:57:54 2018
+| Date         : Wed Apr 04 16:45:43 2018
 | Host         : DESKTOP-VQTADLV running 64-bit major release  (build 9200)
 | Command      : report_utilization -file AUDIO_FX_TOP_utilization_synth.rpt -pb AUDIO_FX_TOP_utilization_synth.pb
 | Design       : AUDIO_FX_TOP
@@ -30,12 +30,12 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  357 |     0 |     20800 |  1.72 |
-|   LUT as Logic          |  357 |     0 |     20800 |  1.72 |
+| Slice LUTs*             |  417 |     0 |     20800 |  2.00 |
+|   LUT as Logic          |  417 |     0 |     20800 |  2.00 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  326 |     0 |     41600 |  0.78 |
-|   Register as Flip Flop |  326 |     0 |     41600 |  0.78 |
-|   Register as Latch     |    0 |     0 |     41600 |  0.00 |
+| Slice Registers         |  364 |     0 |     41600 |  0.88 |
+|   Register as Flip Flop |  361 |     0 |     41600 |  0.87 |
+|   Register as Latch     |    3 |     0 |     41600 | <0.01 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
+| 6     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 326   |          Yes |       Reset |            - |
+| 358   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   33 |     0 |       106 | 31.13 |
+| Bonded IOB                  |   36 |     0 |       106 | 33.96 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -150,17 +150,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  326 |        Flop & Latch |
-| LUT6     |  207 |                 LUT |
-| LUT2     |   94 |                 LUT |
-| CARRY4   |   66 |          CarryLogic |
-| LUT4     |   56 |                 LUT |
-| LUT5     |   33 |                 LUT |
-| LUT3     |   24 |                 LUT |
+| FDRE     |  358 |        Flop & Latch |
+| LUT6     |  250 |                 LUT |
+| LUT2     |  103 |                 LUT |
+| CARRY4   |   72 |          CarryLogic |
+| LUT4     |   61 |                 LUT |
+| LUT5     |   34 |                 LUT |
+| LUT3     |   25 |                 LUT |
 | OBUF     |   18 |                  IO |
+| IBUF     |   18 |                  IO |
 | LUT1     |   17 |                 LUT |
-| IBUF     |   15 |                  IO |
 | RAMB36E1 |   12 |        Block Memory |
+| LDCE     |    3 |        Flop & Latch |
+| FDCE     |    3 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 
