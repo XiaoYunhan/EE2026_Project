@@ -14,37 +14,34 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10984 
+INFO: Helper process launched with PID 15716 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 273.672 ; gain = 66.496
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 273.813 ; gain = 66.504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 INFO: [Synth 8-638] synthesizing module 'Clock_G' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Clock_G.v:23]
 INFO: [Synth 8-256] done synthesizing module 'Clock_G' (1#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Clock_G.v:23]
 INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/SPI.v:20]
 INFO: [Synth 8-256] done synthesizing module 'SPI' (2#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-638] synthesizing module 'CLOCK_four' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/CLOCK_four.v:23]
-INFO: [Synth 8-256] done synthesizing module 'CLOCK_four' (3#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/CLOCK_four.v:23]
-INFO: [Synth 8-638] synthesizing module 'button_signal' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/button_signal.v:23]
-INFO: [Synth 8-638] synthesizing module 'my_dff' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/my_dff.v:23]
-INFO: [Synth 8-256] done synthesizing module 'my_dff' (4#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/my_dff.v:23]
-INFO: [Synth 8-256] done synthesizing module 'button_signal' (5#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/button_signal.v:23]
 INFO: [Synth 8-638] synthesizing module 'Music_Instrument' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v:23]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v:87]
-INFO: [Synth 8-256] done synthesizing module 'Music_Instrument' (6#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Music_Instrument' (3#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v:23]
 INFO: [Synth 8-638] synthesizing module 'clock_slow' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/clock_slow.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clock_slow' (7#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/clock_slow.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_slow' (4#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/clock_slow.v:23]
 INFO: [Synth 8-638] synthesizing module 'delay' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'delay' (8#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay' (5#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v:23]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:83]
 INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (9#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (10#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (6#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+WARNING: [Synth 8-3848] Net volup in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:75]
+WARNING: [Synth 8-3848] Net voldown in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:75]
+WARNING: [Synth 8-3848] Net volreset in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:75]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (7#1) [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 WARNING: [Synth 8-3331] design Music_Instrument has unconnected port volup
 WARNING: [Synth 8-3331] design Music_Instrument has unconnected port voldown
 WARNING: [Synth 8-3331] design Music_Instrument has unconnected port volreset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 311.770 ; gain = 104.594
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 311.836 ; gain = 104.527
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -66,7 +63,7 @@ WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/x
 WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:95]
 WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:95]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 311.770 ; gain = 104.594
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 311.836 ; gain = 104.527
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -100,25 +97,24 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 597.809 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 598.949 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "clk_20k0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "clock_out0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slowC0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slowD0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slowE0" won't be mapped to RAM because it is too sparse
@@ -143,7 +139,7 @@ INFO: [Synth 8-5544] ROM "speaker_out" won't be mapped to Block RAM because addr
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -157,30 +153,27 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     41 Bit       Adders := 1     
-	   2 Input     25 Bit       Adders := 1     
 	   2 Input     18 Bit       Adders := 7     
 	   2 Input     15 Bit       Adders := 1     
-	   2 Input     12 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	               41 Bit    Registers := 1     
-	               25 Bit    Registers := 1     
 	               18 Bit    Registers := 7     
 	               16 Bit    Registers := 2     
 	               12 Bit    Registers := 13    
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 18    
+	                1 Bit    Registers := 11    
 +---RAMs : 
 	             384K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     25 Bit        Muxes := 1     
 	   2 Input     18 Bit        Muxes := 7     
 	   2 Input     16 Bit        Muxes := 2     
-	   2 Input     12 Bit        Muxes := 18    
+	   2 Input     12 Bit        Muxes := 54    
 	   4 Input     12 Bit        Muxes := 1     
 	  12 Input     11 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 11    
 	  10 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 2     
@@ -193,8 +186,6 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module AUDIO_FX_TOP 
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     12 Bit       Adders := 2     
 +---Registers : 
 	               12 Bit    Registers := 1     
 +---Muxes : 
@@ -216,20 +207,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	               12 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
-Module CLOCK_four 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     25 Bit       Adders := 1     
-+---Registers : 
-	               25 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     25 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module my_dff 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 Module Music_Instrument 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -242,7 +219,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 7     
 +---Muxes : 
 	   2 Input     18 Bit        Muxes := 7     
-	   2 Input     12 Bit        Muxes := 16    
+	   2 Input     12 Bit        Muxes := 52    
 	  10 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 7     
 Module clock_slow 
@@ -288,7 +265,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 597.809 ; gain = 390.633
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -301,16 +278,15 @@ INFO: [Synth 8-5546] ROM "slowG0" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-5546] ROM "slowA0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "slowB0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "unitc/clk_20k0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "unit4/clock_out0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "unit2/clock0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[11] driven by constant 0
 WARNING: [Synth 8-3331] design Music_Instrument has unconnected port volup
 WARNING: [Synth 8-3331] design Music_Instrument has unconnected port voldown
 WARNING: [Synth 8-3331] design Music_Instrument has unconnected port volreset
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 598.949 ; gain = 391.641
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -335,92 +311,92 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[0]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[0]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[0]' (FDS) to 'unit1/C_reg[1]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[0]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[0]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[0]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[0]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[4]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[4]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[4]' (FDS) to 'unit1/C_reg[1]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[4]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[4]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[4]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[4]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[2]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[2]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[2]' (FDS) to 'unit1/C_reg[1]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[2]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[2]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[2]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[2]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[3]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[3]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[3]' (FDS) to 'unit1/C_reg[1]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[3]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[3]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[3]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[3]' (FDS) to 'unit1/C_reg[0]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[3]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[3]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[4]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[4]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[4]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[4]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[4]' (FDS) to 'unit1/C_reg[0]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[4]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[4]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[5]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[5]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[5]' (FDS) to 'unit1/C_reg[1]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[5]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[5]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[5]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[5]' (FDS) to 'unit1/C_reg[0]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[5]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[5]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[2]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[2]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[2]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[2]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[2]' (FDS) to 'unit1/C_reg[0]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[2]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[2]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[0]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[0]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[0]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[0]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[0]' (FDS) to 'unit1/C_reg[1]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[0]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[0]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[1]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[1]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[1]' (FDS) to 'unit1/C_reg[6]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[1]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[1]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[1]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[1]' (FDS) to 'unit1/C_reg[6]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[1]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[1]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[6]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[6]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[6]' (FDS) to 'unit1/C_reg[7]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[6]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[6]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[6]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[6]' (FDS) to 'unit1/F_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/A_reg[8]' (FDS) to 'unit1/A_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/B_reg[8]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[8]' (FDS) to 'unit1/C_reg[7]'
-INFO: [Synth 8-3886] merging instance 'unit1/E_reg[8]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[8]' (FDS) to 'unit1/G_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/D_reg[8]' (FDS) to 'unit1/D_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/F_reg[8]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[9]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[9]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[9]' (FDS) to 'unit1/C_reg[7]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[9]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[9]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[9]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[9]' (FDS) to 'unit1/C_reg[6]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[9]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[9]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[8]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[8]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[8]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[8]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[8]' (FDS) to 'unit1/C_reg[6]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[8]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[8]' (FDS) to 'unit1/F_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/A_reg[6]' (FDS) to 'unit1/A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/B_reg[6]' (FDS) to 'unit1/B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/E_reg[6]' (FDS) to 'unit1/E_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/D_reg[6]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[6]' (FDS) to 'unit1/C_reg[7]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[6]' (FDS) to 'unit1/G_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/F_reg[6]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[7]' (FDS) to 'unit1/A_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[7]' (FDS) to 'unit1/B_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[7]' (FDS) to 'unit1/C_reg[10]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[7]' (FDS) to 'unit1/E_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[7]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[7]' (FDS) to 'unit1/D_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[7]' (FDS) to 'unit1/C_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[7]' (FDS) to 'unit1/G_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[7]' (FDS) to 'unit1/F_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/A_reg[11]' (FDS) to 'unit1/A_reg[10]'
 INFO: [Synth 8-3886] merging instance 'unit1/B_reg[11]' (FDS) to 'unit1/B_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/C_reg[11]' (FDS) to 'unit1/C_reg[10]'
 INFO: [Synth 8-3886] merging instance 'unit1/E_reg[11]' (FDS) to 'unit1/E_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/G_reg[11]' (FDS) to 'unit1/G_reg[10]'
 INFO: [Synth 8-3886] merging instance 'unit1/D_reg[11]' (FDS) to 'unit1/D_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit1/C_reg[11]' (FDS) to 'unit1/C_reg[10]'
+INFO: [Synth 8-3886] merging instance 'unit1/G_reg[11]' (FDS) to 'unit1/G_reg[10]'
 INFO: [Synth 8-3886] merging instance 'unit1/F_reg[11]' (FDS) to 'unit1/F_reg[10]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[0]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[4]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[2]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[3]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[4]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[5]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[2]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[0]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[1]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[6]' (FDE) to 'unit1/music_out_reg[11]'
-INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[8]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[9]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[8]' (FDE) to 'unit1/music_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[6]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[7]' (FDE) to 'unit1/music_out_reg[11]'
 INFO: [Synth 8-3886] merging instance 'unit1/music_out_reg[11]' (FDE) to 'unit1/music_out_reg[10]'
 WARNING: [Synth 8-3332] Sequential element (u1/temp_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
@@ -525,9 +501,9 @@ WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[7]) is unused and
 WARNING: [Synth 8-3332] Sequential element (u2/clk_counter_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 598.949 ; gain = 391.641
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -541,10 +517,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 598.949 ; gain = 391.641
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -568,16 +544,16 @@ INFO: [Synth 8-4480] The timing for the instance unit3/memory_reg_0_9 (implement
 INFO: [Synth 8-4480] The timing for the instance unit3/memory_reg_0_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance unit3/memory_reg_0_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -594,56 +570,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[11] with 1st driver pin 'count_reg[11]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[11] with 2nd driver pin 'count_reg[11]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[11] with 3rd driver pin 'count_reg[11]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[10] with 1st driver pin 'count_reg[10]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[10] with 2nd driver pin 'count_reg[10]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[10] with 3rd driver pin 'count_reg[10]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[9] with 1st driver pin 'count_reg[9]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[9] with 2nd driver pin 'count_reg[9]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[9] with 3rd driver pin 'count_reg[9]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[8] with 1st driver pin 'count_reg[8]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[8] with 2nd driver pin 'count_reg[8]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[8] with 3rd driver pin 'count_reg[8]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[7] with 1st driver pin 'count_reg[7]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[7] with 2nd driver pin 'count_reg[7]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[7] with 3rd driver pin 'count_reg[7]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[6] with 1st driver pin 'count_reg[6]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[6] with 2nd driver pin 'count_reg[6]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[6] with 3rd driver pin 'count_reg[6]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[5] with 1st driver pin 'count_reg[5]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[5] with 2nd driver pin 'count_reg[5]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[5] with 3rd driver pin 'count_reg[5]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[4] with 1st driver pin 'count_reg[4]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[4] with 2nd driver pin 'count_reg[4]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[4] with 3rd driver pin 'count_reg[4]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[3] with 1st driver pin 'count_reg[3]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[3] with 2nd driver pin 'count_reg[3]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[3] with 3rd driver pin 'count_reg[3]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[2] with 1st driver pin 'count_reg[2]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[2] with 2nd driver pin 'count_reg[2]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[2] with 3rd driver pin 'count_reg[2]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[1] with 1st driver pin 'count_reg[1]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[1] with 2nd driver pin 'count_reg[1]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[1] with 3rd driver pin 'count_reg[1]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 1st driver pin 'count_reg[0]/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:73]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 2nd driver pin 'count_reg[0]__0/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:69]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 3rd driver pin 'count_reg[0]__1/Q' [C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:65]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       12|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -655,25 +595,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -690,55 +630,48 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     2|
-|2     |CARRY4   |    78|
-|3     |LUT1     |   288|
-|4     |LUT2     |    78|
-|5     |LUT3     |    25|
-|6     |LUT4     |    58|
-|7     |LUT5     |    56|
-|8     |LUT6     |   152|
+|2     |CARRY4   |    66|
+|3     |LUT1     |   252|
+|4     |LUT2     |    94|
+|5     |LUT3     |    24|
+|6     |LUT4     |    56|
+|7     |LUT5     |    33|
+|8     |LUT6     |   207|
 |9     |RAMB36E1 |    12|
-|10    |FDRE     |   392|
-|11    |IBUF     |    17|
+|10    |FDRE     |   326|
+|11    |IBUF     |    15|
 |12    |OBUF     |    18|
 +------+---------+------+
 
 Report Instance Areas: 
-+------+----------+-----------------+------+
-|      |Instance  |Module           |Cells |
-+------+----------+-----------------+------+
-|1     |top       |                 |  1176|
-|2     |  bu1     |button_signal    |     3|
-|3     |    unit1 |my_dff_2         |     2|
-|4     |    unit2 |my_dff_3         |     1|
-|5     |  bu3     |button_signal_0  |     3|
-|6     |    unit1 |my_dff           |     2|
-|7     |    unit2 |my_dff_1         |     1|
-|8     |  u1      |SPI              |   107|
-|9     |  u2      |DA2RefComp       |    47|
-|10    |  unit1   |Music_Instrument |   618|
-|11    |  unit2   |clock_slow       |    34|
-|12    |  unit3   |delay            |   141|
-|13    |  unit4   |CLOCK_four       |    67|
-|14    |  unitc   |Clock_G          |    35|
-+------+----------+-----------------+------+
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |  1105|
+|2     |  u1     |SPI              |    77|
+|3     |  u2     |DA2RefComp       |    47|
+|4     |  unit1  |Music_Instrument |   735|
+|5     |  unit2  |clock_slow       |    34|
+|6     |  unit3  |delay            |   114|
+|7     |  unitc  |Clock_G          |    35|
++------+---------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 600.629 ; gain = 393.320
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 36 critical warnings and 141 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 597.809 ; gain = 104.594
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 597.809 ; gain = 390.633
+Synthesis finished with 0 errors, 0 critical warnings and 139 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 600.629 ; gain = 106.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 600.629 ; gain = 393.320
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-162 Infos, 125 Warnings, 42 Critical Warnings and 0 Errors encountered.
+154 Infos, 128 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 597.809 ; gain = 390.633
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 597.809 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 03 20:45:00 2018...
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 600.629 ; gain = 393.320
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 600.629 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 04 14:57:54 2018...

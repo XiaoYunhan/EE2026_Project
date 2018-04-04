@@ -13,9 +13,9 @@
 
 module AUDIO_FX_TOP(
     input CLK,            // 100MHz FPGA clock
-    input butup,
-    input butdown,
-    input butreset,
+//    input butup,
+//    input butdown,
+//    input butreset,
     input [2:0] mode,
     input [8:0] sw,
     input rep,
@@ -38,7 +38,7 @@ module AUDIO_FX_TOP(
     // Please create the clock divider module and instantiate it here.
       wire clk_20k;
       wire clk_50M;
-      wire slow_CLK;
+ //     wire slow_CLK;
       Clock_G unitc (CLK,clk_20k,clk_50M);
       
      //////////////////////////////////////////////////////////////////////////////////
@@ -53,25 +53,25 @@ module AUDIO_FX_TOP(
       reg [11:0] speaker_out;
       wire [11:0] delay_out;
       wire [11:0] music_out;
-     wire volup,voldown, volreset;
+ //    wire volup,voldown, volreset;
     
-    CLOCK_four unit4 (CLK,slow_CLK);
-    button_signal bu1 (slow_CLK,butup,volup);
-    button_signal bu2 (slow_CLK,butdown,voldown);
-    button_signal bu3 (slow_CLK,butreset,volreset);
-      reg [11:0]count=12'b0;
-      always @ (posedge volup )
-            begin
-             count=count-1;
-            end   
-            always @ (posedge volup)
-                begin
-                 count=count+1; 
-                end   
-            always @ (posedge volreset)
-                    begin
-                    count=0;
-                    end   
+//    CLOCK_four unit4 (CLK,slow_CLK);
+//    button_signal bu1 (slow_CLK,butup,volup);
+//    button_signal bu2 (slow_CLK,butdown,voldown);
+//    button_signal bu3 (slow_CLK,butreset,volreset);
+//      reg [11:0]count=12'b0;
+//      always @ (posedge volup )
+//            begin
+//             count=count-1;
+//            end   
+//            always @ (posedge volup)
+//                begin
+//                 count=count+1; 
+//                end   
+//            always @ (posedge volreset)
+//                    begin
+//                    count=0;
+//                    end   
     Music_Instrument unit1 (CLK,rep,sw,volup,voldown,volreset,music_out);
    
     wire clock_s;
@@ -81,9 +81,9 @@ module AUDIO_FX_TOP(
     always @ (posedge CLK)
     begin
     case (mode)
-    3'b001:speaker_out<=(MIC_in>>count);
-    3'b010:speaker_out<=(delay_out>>count);
-    3'b100:speaker_out<=(music_out>>count);
+    3'b001:speaker_out<=MIC_in;
+    3'b010:speaker_out<=delay_out;
+    3'b100:speaker_out<=music_out;
     endcase
     end
     assign led=(speaker_out>11'b10000000000)?11'b11111111111:(speaker_out>11'b1000000000)?11'b1111111111:(speaker_out>11'b100000000)?11'b111111111:(speaker_out>11'b10000000)?11'b11111111:(speaker_out>11'b1000000)?11'b1111111:(speaker_out>11'b100000)?11'b111111:(speaker_out>11'b10000)?11'b11111:(speaker_out>11'b1000)?11'b1111:(speaker_out>11'b100)?11'b111:(speaker_out>11'b10)?11'b11:(speaker_out>11'b1)?11'b1:0;

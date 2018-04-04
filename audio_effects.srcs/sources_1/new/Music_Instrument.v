@@ -92,8 +92,8 @@ module Music_Instrument(
         9'b000010000: music_out<=G;
         9'b000100000: music_out<=A;
         9'b001000000: music_out<=B;
-        9'b010000000: music_out<=(melody<200000000)?E:(melody<300000000)?F:(melody<400000000)?G:(melody<550000000)?E:(melody<700000000)?D:(melody<900000000)?C:(melody<1100000000)?D:(melody<1250000000)?E:0;
-        9'b100000000: music_out<=(melody<200000000)?E:(melody<300000000)?F:(melody<400000000)?G:(melody<500000000)?G:(melody<600000000)?F:(melody<700000000)?E:(melody<800000000)?D:(melody<90000000)?E:0;
+        9'b010000000: music_out<=(melody<50000000)?E: (melody<60000000)?12'b0: (melody<100000000)?E: (melody<110000000)?12'b0: (melody<200000000)?E: (melody<210000000)?12'b0: (melody<300000000)?F: (melody<310000000)?12'b0: (melody<400000000)?G: (melody<410000000)?12'b0: (melody<550000000)?E: (melody<560000000)?12'b0: (melody<600000000)?D: (melody<610000000)?12'b0: (melody<700000000)?D: (melody<710000000)?12'b0: (melody<750000000)?C: (melody<760000000)?12'b0: (melody<800000000)?C: (melody<810000000)?12'b0: (melody<900000000)?C: (melody<910000000)?12'b0: (melody<1100000000)?D: (melody<1110000000)?12'b0: (melody<1250000000)?E:0;
+        9'b100000000: music_out<=(melody<100000000)?E: (melody<110000000)?12'b0: (melody<200000000)?E: (melody<210000000)?12'b0: (melody<300000000)?F: (melody<310000000)?12'b0: (melody<400000000)?G: (melody<410000000)?12'b0: (melody<500000000)?G: (melody<510000000)?12'b0: (melody<600000000)?F: (melody<610000000)?12'b0: (melody<700000000)?E: (melody<710000000)?12'b0: (melody<800000000)?D: (melody<810000000)?12'b0: (melody<90000000)?C: (melody<910000000)?12'b0: (melody<100000000)?C: (melody<1010000000)?12'b0: (melody<110000000)?D: (melody<1110000000)?12'b0: (melody<120000000)?E: (melody<1210000000)?12'b0: (melody<130000000)?E: (melody<1310000000)?12'b0: (melody<140000000)?D: (melody<1410000000)?12'b0: (melody<150000000)?D: (melody<1510000000)?12'b0:0;
        
       
       
