@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Wed Apr 04 22:35:51 2018
+| Date             : Sat Apr 07 12:21:26 2018
 | Host             : DESKTOP-VQTADLV running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
@@ -29,18 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+-------+
-| Total On-Chip Power (W)  | 9.985 |
-| Dynamic (W)              | 9.842 |
-| Device Static (W)        | 0.143 |
-| Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 35.1  |
-| Junction Temperature (C) | 74.9  |
-| Confidence Level         | Low   |
-| Setting File             | ---   |
-| Simulation Activity File | ---   |
-| Design Nets Matched      | NA    |
-+--------------------------+-------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 20.686 (Junction temp exceeded!) |
+| Dynamic (W)              | 20.182                           |
+| Device Static (W)        | 0.505                            |
+| Effective TJA (C/W)      | 5.0                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 
 
 1.1 On-Chip Components
@@ -49,17 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     1.008 |      966 |       --- |             --- |
-|   LUT as Logic |     0.756 |      422 |     20800 |            2.03 |
-|   CARRY4       |     0.127 |       72 |      8150 |            0.88 |
-|   Register     |     0.120 |      371 |     41600 |            0.89 |
+| Slice Logic    |     1.121 |     1265 |       --- |             --- |
+|   LUT as Logic |     0.834 |      568 |     20800 |            2.73 |
+|   CARRY4       |     0.150 |      125 |      8150 |            1.53 |
+|   Register     |     0.131 |      430 |     41600 |            1.03 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       29 |       --- |             --- |
-| Signals        |     1.354 |      886 |       --- |             --- |
+|   Others       |     0.000 |       31 |       --- |             --- |
+| Signals        |     1.401 |     1078 |       --- |             --- |
 | Block RAM      |     0.000 |       12 |        50 |           24.00 |
-| I/O            |     7.479 |       36 |       106 |           33.96 |
-| Static Power   |     0.143 |          |           |                 |
-| Total          |     9.985 |          |           |                 |
+| I/O            |    17.660 |       47 |       106 |           44.34 |
+| Static Power   |     0.505 |          |           |                 |
+| Total          |    20.686 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,16 +69,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     2.502 |       2.435 |      0.067 |
-| Vccaux    |       1.800 |     0.290 |       0.271 |      0.019 |
-| Vcco33    |       3.300 |     2.098 |       2.096 |      0.001 |
+| Vccint    |       1.000 |     2.944 |       2.594 |      0.350 |
+| Vccaux    |       1.800 |     0.698 |       0.645 |      0.053 |
+| Vcco33    |       3.300 |     4.979 |       4.978 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |
+| Vccbram   |       1.000 |     0.019 |       0.000 |      0.019 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -136,7 +136,7 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| AUDIO_FX_TOP |     9.842 |
+| AUDIO_FX_TOP |    20.182 |
 |   bu1        |     0.000 |
 |     unit1    |     0.000 |
 |     unit2    |     0.000 |
@@ -146,13 +146,14 @@ Table of Contents
 |   bu3        |     0.000 |
 |     unit1    |     0.000 |
 |     unit2    |     0.000 |
-|   u1         |     0.357 |
-|   u2         |     0.309 |
-|   unit1      |     1.068 |
-|   unit2      |     0.124 |
-|   unit3      |     0.002 |
-|   unit4      |     0.172 |
-|   unitc      |     0.129 |
+|   u1         |     0.281 |
+|   u2         |     0.313 |
+|   unit1      |     1.007 |
+|   unit2      |     0.109 |
+|   unit3      |     0.000 |
+|   unit4      |     0.149 |
+|   unit6      |     0.349 |
+|   unitc      |     0.108 |
 +--------------+-----------+
 
 

@@ -16,6 +16,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/my_dff.v
+  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/seven_segment.v
   C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/button_signal.v
   C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/CLOCK_four.v
   C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v
