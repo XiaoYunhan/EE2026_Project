@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log AUDIO_FX_TOP.vdi -applog -m64 -messageDb vivado.pb -mode batch -source AUDIO_FX_TOP.tcl -notrace
-
-
-****** Vivado v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Apr 07 13:49:50 2018
+# Process ID: 8752
+# Current directory: C:/Users/User/Desktop/EE2026_Project/audio_effects.runs/impl_1
+# Command line: vivado.exe -log AUDIO_FX_TOP.vdi -applog -messageDb vivado.pb -mode batch -source AUDIO_FX_TOP.tcl -notrace
+# Log file: C:/Users/User/Desktop/EE2026_Project/audio_effects.runs/impl_1/AUDIO_FX_TOP.vdi
+# Journal file: C:/Users/User/Desktop/EE2026_Project/audio_effects.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
 source AUDIO_FX_TOP.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
@@ -399,72 +400,3 @@ Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 INFO: [Common 17-206] Exiting Vivado at Sat Apr 07 13:54:45 2018...
-
-*** Running vivado
-    with args -log AUDIO_FX_TOP.vdi -applog -m64 -messageDb vivado.pb -mode batch -source AUDIO_FX_TOP.tcl -notrace
-
-
-****** Vivado v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source AUDIO_FX_TOP.tcl -notrace
-Command: open_checkpoint AUDIO_FX_TOP_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 207.449 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2016.2
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/User/Desktop/EE2026_Project/audio_effects.runs/impl_1/.Xil/Vivado-15608-DESKTOP-JMDFMR6/dcp/AUDIO_FX_TOP.xdc]
-Finished Parsing XDC File [C:/Users/User/Desktop/EE2026_Project/audio_effects.runs/impl_1/.Xil/Vivado-15608-DESKTOP-JMDFMR6/dcp/AUDIO_FX_TOP.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.456 . Memory (MB): peak = 439.480 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.456 . Memory (MB): peak = 439.480 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2016.2 (64-bit) build 1577090
-open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 439.480 ; gain = 232.031
-Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
-Running DRC as a precondition to command write_bitstream
-INFO: [DRC 23-27] Running DRC with 2 threads
-WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
-
- set_property CFGBVS value1 [current_design]
- #where value1 is either VCCO or GND
-
- set_property CONFIG_VOLTAGE value2 [current_design]
- #where value2 is the voltage provided to configuration bank 0
-
-Refer to the device configuration user guide for more information.
-WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net bu2/unit2/count_reg[1]_P is a gated clock net sourced by a combinational pin bu2/unit2/count_reg[1]_LDC_i_1/O, cell bu2/unit2/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net bu3/unit1/count_reg[0] is a gated clock net sourced by a combinational pin bu3/unit1/count[0]_i_1__2/O, cell bu3/unit1/count[0]_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT bu3/unit1/count[0]_i_1__2 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
-    count_reg[0] {FDCE}
-    count_reg[1]_P {FDPE}
-
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
-INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
-Loading data files...
-Loading site data...
-Loading route data...
-Processing options...
-Creating bitmap...
-Creating bitstream...
-Writing bitstream ./AUDIO_FX_TOP.bit...
-INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 799.359 ; gain = 359.879
-INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file AUDIO_FX_TOP.hwdef
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 07 13:57:35 2018...

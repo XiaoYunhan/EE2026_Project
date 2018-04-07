@@ -29,7 +29,7 @@ module CLOCK_four(
     clock_out<=0;
     end
     always @ (posedge CLOCK) begin
-    count<=(count==25'b1011111010111100001000000)?0:count+1;
+    count<=(count==23'b11111010111100001000000)?0:count+1;
     clock_out<=(count==0)?~clock_out:clock_out;
     end
 endmodule

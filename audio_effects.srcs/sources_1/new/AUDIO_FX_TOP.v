@@ -65,10 +65,10 @@ module AUDIO_FX_TOP(
     button_signal bu1 (slow_CLK,butup,volup);
     button_signal bu2 (slow_CLK,butdown,voldown);
     button_signal bu3 (slow_CLK,butreset,volreset);
-      reg [1:0]count=2'b11;
+      reg [1:0]count=2'b01;
       always @ (posedge volup, posedge voldown, posedge volreset )
       begin
-      count<=(volup)? count-1 : (voldown)? count+1:(volreset )?3'b111:count;
+      count<=(volup)? 0 : (voldown)? 2:1;
       end   
             
             
@@ -87,9 +87,9 @@ module AUDIO_FX_TOP(
     3'b100:speaker_out=music_out;//>>count;
     endcase
     if (count==0) led=12'b111111111111;
-    else if (count==1) led=12'b011111111111;
-    else if (count==2) led=12'b001111111111;
-    else if (count==3) led=12'b000111111111;
+    else if (count==1) led=12'b000011111111;
+    else if (count==2) led=12'b000000001111;
+  //  else if (count==3) led=12'b000111111111;
    // else if (count==4) led=12'b000011111111;
    // else if (count==5) led=12'b000001111111;
   //  else if (count==6) led=12'b000000111111;

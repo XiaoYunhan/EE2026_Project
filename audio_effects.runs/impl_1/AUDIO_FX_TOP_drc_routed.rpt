@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Sat Apr 07 12:21:25 2018
-| Host         : DESKTOP-VQTADLV running 64-bit major release  (build 9200)
+| Date         : Sat Apr 07 13:54:39 2018
+| Host         : DESKTOP-JMDFMR6 running 64-bit major release  (build 9200)
 | Command      : report_drc -file AUDIO_FX_TOP_drc_routed.rpt -pb AUDIO_FX_TOP_drc_routed.pb
 | Design       : AUDIO_FX_TOP
 | Device       : xc7a35tcpg236-1
@@ -23,7 +23,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 4
 
 2. REPORT DETAILS
 -----------------
@@ -42,24 +42,19 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net bu2/unit2/count_reg[0]_C is a gated clock net sourced by a combinational pin bu2/unit2/count_reg[0]_LDC_i_1/O, cell bu2/unit2/count_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net bu2/unit2/count_reg[1]_P is a gated clock net sourced by a combinational pin bu2/unit2/count_reg[1]_LDC_i_1/O, cell bu2/unit2/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net bu2/unit2/led_reg[10] is a gated clock net sourced by a combinational pin bu2/unit2/count_reg[1]_LDC_i_1/O, cell bu2/unit2/count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#3 Warning
-Gated clock check  
-Net bu3/unit1/count_reg[1]_C is a gated clock net sourced by a combinational pin bu3/unit1/count[1]_C_i_1/O, cell bu3/unit1/count[1]_C_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net bu3/unit1/count_reg[0] is a gated clock net sourced by a combinational pin bu3/unit1/count[0]_i_1__2/O, cell bu3/unit1/count[0]_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT bu3/unit1/count[1]_C_i_1 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
-    count_reg[0]_C {FDCE}
-    count_reg[1]_C {FDCE}
+A LUT bu3/unit1/count[0]_i_1__2 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
+    count_reg[0] {FDCE}
+    count_reg[1]_P {FDPE}
 
 Related violations: <none>
 

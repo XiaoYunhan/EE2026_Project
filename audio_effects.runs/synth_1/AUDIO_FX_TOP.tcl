@@ -10,28 +10,28 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/xw/Desktop/EE2026_Project/audio_effects.cache/wt [current_project]
-set_property parent.project_path C:/Users/xw/Desktop/EE2026_Project/audio_effects.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/User/Desktop/EE2026_Project/audio_effects.cache/wt [current_project]
+set_property parent.project_path C:/Users/User/Desktop/EE2026_Project/audio_effects.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/my_dff.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/seven_segment.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/button_signal.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/CLOCK_four.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/clock_slow.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Clock_G.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/SPI.v
-  C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/my_dff.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/seven_segment.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/button_signal.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/CLOCK_four.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Music_Instrument.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/delay.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/clock_slow.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/Clock_G.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/SPI.v
+  C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
 }
-read_vhdl -library xil_defaultlib C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd
+read_vhdl -library xil_defaultlib C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/xw/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+read_xdc C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/User/Desktop/EE2026_Project/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 
 
 synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
