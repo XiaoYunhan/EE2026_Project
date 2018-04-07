@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Sat Apr 07 13:51:54 2018
-| Host         : DESKTOP-JMDFMR6 running 64-bit major release  (build 9200)
+| Date         : Sat Apr 07 14:52:54 2018
+| Host         : DESKTOP-VQTADLV running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
 | Design       : AUDIO_FX_TOP
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    31 |
-| Unused register locations in slices containing registers |   155 |
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |   165 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,52 +33,54 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             109 |           47 |
+| No           | No                    | No                     |             114 |           51 |
 | No           | No                    | Yes                    |              50 |           15 |
-| No           | Yes                   | No                     |             220 |           63 |
-| Yes          | No                    | No                     |              24 |           10 |
+| No           | Yes                   | No                     |             245 |           69 |
+| Yes          | No                    | No                     |              24 |           11 |
 | Yes          | No                    | Yes                    |              16 |            4 |
-| Yes          | Yes                   | No                     |              10 |            4 |
+| Yes          | Yes                   | No                     |              10 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------+----------------------------+----------------------------+------------------+----------------+
-|        Clock Signal       |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
-+---------------------------+----------------------------+----------------------------+------------------+----------------+
-|  unitc/clk                |                            |                            |                1 |              1 |
-|  bu2/unit2/count_reg[1]_P |                            | bu1/unit1/led_reg[11]      |                1 |              1 |
-|  bu3/unit1/count_reg[0]   |                            | bu1/unit2/count_reg[0]     |                1 |              1 |
-|  bu3/unit1/count_reg[0]   |                            | bu2/unit2/count_reg[1]_P   |                1 |              1 |
-|  CLK_IBUF_BUFG            |                            | led[3]_i_1_n_0             |                1 |              1 |
-|  CLK_IBUF_BUFG            | led[11]_i_2_n_0            | led[11]_i_1_n_0            |                1 |              1 |
-|  CLK_IBUF_BUFG            | led[7]_i_2_n_0             | p_0_in0                    |                1 |              1 |
-|  u2/J_DA2_Pin4_OBUF       |                            |                            |                1 |              2 |
-|  u2/J_DA2_Pin4_OBUF       | u2/shiftCounter[3]_i_1_n_0 | u2/temp1[15]_i_1_n_0       |                1 |              4 |
-|  u2/J_DA2_Pin4_OBUF       | u2/temp2                   | u2/temp1[15]_i_1_n_0       |                1 |              4 |
-|  unit4/clock_out          |                            |                            |                3 |              7 |
-|  CLK_IBUF_BUFG            |                            | unitc/count[11]_i_1_n_0    |                3 |             11 |
-|  CLK_IBUF_BUFG            |                            | unit2/count[11]_i_1__0_n_0 |                3 |             11 |
-|  unitc/J_MIC3_Pin1_OBUF   |                            |                            |                4 |             12 |
-|  u2/J_DA2_Pin4_OBUF       | u2/temp2                   |                            |                4 |             12 |
-| ~u1/J_MIC3_Pin4_OBUF      |                            |                            |                4 |             12 |
-|  CLK_IBUF_BUFG            |                            | unitc/J_MIC3_Pin1_OBUF     |                3 |             12 |
-|  CLK_IBUF_BUFG            | speaker_out[11]_i_1_n_0    |                            |                6 |             12 |
-|  CLK_IBUF_BUFG            | unit6/sel                  | seven_segment_reset        |                4 |             16 |
-|  CLK_IBUF_BUFG            |                            | unit1/countA[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit1/countB[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit1/countC[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit1/countD[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit1/countE[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit1/countF[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit1/countG[17]_i_1_n_0   |                5 |             17 |
-|  CLK_IBUF_BUFG            |                            | unit4/count[24]_i_1_n_0    |                6 |             24 |
-|  CLK_IBUF_BUFG            |                            |                            |               21 |             30 |
-|  CLK_IBUF_BUFG            |                            | unit1/melody0              |               11 |             41 |
-|  clock_s_BUFG             |                            |                            |               13 |             45 |
-|  CLK_IBUF_BUFG            |                            | seven_segment_reset        |               13 |             48 |
-+---------------------------+----------------------------+----------------------------+------------------+----------------+
++---------------------------+----------------------------+---------------------------------+------------------+----------------+
+|        Clock Signal       |        Enable Signal       |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------+----------------------------+---------------------------------+------------------+----------------+
+|  unitc/clk                |                            |                                 |                1 |              1 |
+|  bu2/unit2/count_reg[1]_P |                            | bu1/unit1/speaker_out_reg[10]   |                1 |              1 |
+|  bu3/unit1/count_reg[0]   |                            | bu1/unit2/count_reg[0]          |                1 |              1 |
+|  bu3/unit1/count_reg[0]   |                            | bu2/unit2/count_reg[1]_P        |                1 |              1 |
+|  CLK_IBUF_BUFG            |                            | led[3]_i_1_n_0                  |                1 |              1 |
+|  CLK_IBUF_BUFG            | led[11]_i_2_n_0            | led[11]_i_1_n_0                 |                1 |              1 |
+|  CLK_IBUF_BUFG            | led[7]_i_2_n_0             | p_0_in0                         |                1 |              1 |
+|  u2/J_DA2_Pin4_OBUF       |                            |                                 |                1 |              2 |
+|  u2/J_DA2_Pin4_OBUF       | u2/shiftCounter[3]_i_1_n_0 | u2/temp1[15]_i_1_n_0            |                2 |              4 |
+|  u2/J_DA2_Pin4_OBUF       | u2/temp2                   | u2/temp1[15]_i_1_n_0            |                1 |              4 |
+|  unit4/clock_out          |                            |                                 |                2 |              7 |
+|  CLK_IBUF_BUFG            |                            | unit2/count[11]_i_1__0_n_0      |                3 |             11 |
+|  CLK_IBUF_BUFG            |                            | unitc/count[11]_i_1_n_0         |                3 |             11 |
+|  unitc/J_MIC3_Pin1_OBUF   |                            |                                 |                4 |             12 |
+|  u2/J_DA2_Pin4_OBUF       | u2/temp2                   |                                 |                3 |             12 |
+| ~u1/J_MIC3_Pin4_OBUF      |                            |                                 |                3 |             12 |
+|  CLK_IBUF_BUFG            |                            | unit2/count_half[12]_i_1_n_0    |                3 |             12 |
+|  CLK_IBUF_BUFG            |                            | unitc/J_MIC3_Pin1_OBUF          |                3 |             12 |
+|  CLK_IBUF_BUFG            | speaker_out[11]_i_1_n_0    |                                 |                8 |             12 |
+|  CLK_IBUF_BUFG            |                            | unit2/count_quarter[13]_i_1_n_0 |                4 |             13 |
+|  CLK_IBUF_BUFG            | unit6/sel                  | seven_segment_reset             |                4 |             16 |
+|  CLK_IBUF_BUFG            |                            | unit1/countG[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit1/countA[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit1/countB[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit1/countC[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit1/countD[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit1/countE[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit1/countF[17]_i_1_n_0        |                5 |             17 |
+|  CLK_IBUF_BUFG            |                            | unit4/count[24]_i_1_n_0         |                6 |             24 |
+|  CLK_IBUF_BUFG            |                            |                                 |               27 |             35 |
+|  CLK_IBUF_BUFG            |                            | unit1/melody0                   |               10 |             41 |
+|  clock_s_BUFG             |                            |                                 |               13 |             45 |
+|  CLK_IBUF_BUFG            |                            | seven_segment_reset             |               13 |             48 |
++---------------------------+----------------------------+---------------------------------+------------------+----------------+
 
 

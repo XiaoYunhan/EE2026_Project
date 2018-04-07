@@ -19,6 +19,7 @@ module AUDIO_FX_TOP(
     input [2:0] mode,
     input [8:0] sw,
     input rep,
+    input [1:0] delay_option,
   //  input mix,
     
  
@@ -74,17 +75,24 @@ module AUDIO_FX_TOP(
             
 
     Music_Instrument unit1 (CLK,rep,sw,music_out);
-   
-    wire clock_s;
-    clock_slow unit2 (CLK,clock_s);
+    reg clock_s;
+    wire clock_s_one,clock_s_two,clock_s_three;
+    clock_slow unit2 (CLK,clock_s_one,clock_s_two,clock_s_three);
+    always @ (posedge CLK) begin
+    case(delay_option)
+    2'b00:clock_s=clock_s_one;
+    2'b01:clock_s=clock_s_two;
+    2'b10:clock_s=clock_s_three;
+    endcase
+    end
     delay unit3 (clock_s,MIC_in,delay_out);
    
     always @ (posedge CLK)
     begin
     case (mode)
-    3'b001:speaker_out=MIC_in;//>>count;
-    3'b010:speaker_out=delay_out;//>>count;
-    3'b100:speaker_out=music_out;//>>count;
+    3'b001:speaker_out=MIC_in>>count;
+    3'b010:speaker_out=delay_out>>count;
+    3'b100:speaker_out=music_out>>count;
     endcase
     if (count==0) led=12'b111111111111;
     else if (count==1) led=12'b000011111111;
